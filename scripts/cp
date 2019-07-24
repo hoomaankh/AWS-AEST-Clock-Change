@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /etc/sysconfig/clock
+cp Clocknew clock

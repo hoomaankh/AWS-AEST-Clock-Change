@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /clock
+    destination: /etc/sysconfig/clocknew
+hooks:
+  BeforeInstall:
+    - location: scripts/backup
+      timeout: 300
+      runas: root
+    - location: scripts/cp
+      timeout: 300
+      runas: root
+
