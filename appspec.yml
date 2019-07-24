@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /clock
-    destination: /etc/sysconfig/clocknew
+  - source: /clock2
+    destination: /etc/sysconfig/
 hooks:
   BeforeInstall:
     - location: scripts/backup
