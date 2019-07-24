@@ -11,4 +11,8 @@ hooks:
     - location: scripts/cp
       timeout: 300
       runas: root
+  ApplicationStop:
+    - location: scripts/restart
+      timeout: 300
+      runas: root
 
